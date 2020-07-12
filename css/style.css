@@ -6,20 +6,406 @@
 	box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  color:#3a3a3a;
+  
+}
+
+
+h3,
+a {
+  color:rgb(0, 255, 157);
+}
+
+p{
+  color:white;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+hr{
+  width: 90%;
+  margin:0 auto; 
+}
+
+
+
 
 
 /* ================================= 
-  Base Layout Styles
+  Base Layout Styles font-family: 'Permanent Marker', cursive;
 ==================================== */
 
 /* ---- Navigation ---- */
+.name{
+  margin:0;
+  padding-top:10px;
+  font-family: 'Kalam', cursive;
+  text-shadow: 5px 8px 2px rgb(0, 0, 0);
+ 
+}
+
+.name a,
+.main-nav a{
+   text-align: center;
+   display: block;
+   padding: 10px 15px;
+}
+
+.main-nav{
+  font-size: 1em;
+  text-transform: uppercase;
+  margin:30px 10px;
+  }
+
+  .main-nav li{
+   background-color: black;
+    margin: 10px;
+    border: solid 3px white;
+    padding:2px;
+    border-radius: 20px;
+    font-family: 'Kalam', cursive;
+
+
+  }
+
+.main-nav a:hover{
+  transform:2px;
+  color:white;
+}
+
+
+/* END OF NAVIGATION */
 
 /* ---- Layout Containers ---- */
 
+.wrapper{
+background: rgb(250,6,6);
+background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, rgb(66, 182, 255) 0%, rgb(10, 20, 1) 100%, rgba(37,36,55,1) 100%);
+}
+
+.intro,
+.main-footer{
+  text-align:center;
+}
+
+.portfolio{
+  letter-spacing: 1px;
+  padding:30px 0;
+}
+
+.projects{
+  background-color:rgb(0, 12, 4);
+  width: 100%;
+  margin:0 auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
+  box-shadow: 40px 20px 80px 105px rgb(0, 12, 4);
+}
+
+.projects h3{
+  
+  color:rgb(0, 255, 157);
+  text-shadow: 2px 2px black;
+  margin-top: 30px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.projects p{
+  color:white;
+   text-shadow: 1px 1px black;
+  padding: 0 3px 20px 3px;
+  
+}
+
+.projects img {
+  border: 2px solid white;
+  padding:5px;
+}
+
 /* ---- Page Elements ---- */
+
+.profile-pic{
+  margin-top: 40px;
+  width:70%;
+  border: solid 3px white;
+  border-radius: 15px;
+}
+
+.description{
+  padding:0 16px;
+  margin-bottom: 80px;
+
+}
+
+.skills{
+  text-align: center;
+  color:white;
+  font-size: 1.3em;
+  padding: 30px 0;
+  display:block;
+  
+ 
+}
+
+.contact{
+   padding: 2em 1em 3em 1em;
+   text-align: center;
+   text-shadow: 2px 2px black;
+ 
+  
+}
+
+.contact h3{
+  text-transform: uppercase;
+}
+ 
+.phone,
+.email{
+  color:greenyellow;
+}
+
+/* footer elemetns and classes */
+
+.main-footer{
+  padding:23px 20px;
+
+}
+
+.footername{
+  float: left;
+  font-family: 'Kalam', cursive;
+  /*margin-left: px;*/
+  font-size: 1em;
+}
+
+.backtop{
+  float: right;
+  font-family: 'Kalam', cursive;
+  
+}
+
+.footer-nav{
+  display: none;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-/* ---- Float clearfix ---- */
+@media (min-width: 769px){
+ 
+  
+
+  .name,
+  .main-nav{
+    text-align: center;
+  }
+
+  .name{
+    padding-top: 40px;
+  }
+
+  .main-nav{
+    margin: 10px 15px;
+  }
+
+
+  .main-nav li{
+    display: inline-block;
+    margin: 0 20px;
+    border:none;
+    background-color:transparent;
+  }
+
+  .profile-pic{
+    float: right;
+    margin-top:45px;
+    margin-right: 25px;  
+    max-width: 35%;
+  }
+
+  .description{
+    float: left;
+    text-align: left;  
+    font-size: 20px;
+    line-height: 1.5;
+    width: 60%;
+    padding:20px;
+    margin-left: 12px;
+  }
+
+  
+ 
+  .col{
+    float:left;
+    width:50%;
+    padding:8px;
+     
+    }
+
+  .col p{
+    
+    padding:0 16px 20px 16px;
+    font-size: 1.1em;
+    width:100%;
+  }
+
+  .skills{
+    margin-bottom: 20px;;
+  }
+
+  
+  .s1{
+    float: right;
+    margin-right: 20%;
+    list-style-type: disc;
+    
+  }
+
+  .s2{
+    float: left;
+    margin-left: 25%;
+    list-style-type: disc;
+    }
+  
+
+  .contact p{
+    font-size: 1.4em;
+    padding: 5px 60px;
+  }
+
+  .phone,
+  .email{
+      font-size: 1.1em;
+  }
+
+  .main-footer {
+    padding: 23px 20px 50px 20px;
+}
+
+  .footername{
+    margin-left:15px;
+  }
+
+  .backtop{
+    display:none;
+  }
+
+  .footer-nav{ 
+    display: block; 
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1em;
+  }
+
+  .footer-nav ul{
+      float: right;
+  }
+
+  .footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .main-footer a:hover {
+    color:red;
+  }
+
+  }
+
+/* MEDIA QUERIES @ 1024PX */
+
+@media (min-width: 1024px){
+
+  
+
+  .name{
+    float: left;
+    padding-top:40px;
+    margin-left: 33px;
+    
+    }
+
+  .main-nav {
+    float:right;
+    padding-top:20px;
+    font-size: 1em;
+    margin-right: 30px;
+    
+    }
+
+  .main-nav li {
+      margin:0px;
+    }
+
+  .description{
+    font-size:1.3em;
+    margin-top: 0;
+    margin-left: 30px;
+    width: 55%;
+  }
+
+  .profile-pic{
+    margin-top: 25px;
+    margin-right:40px ;
+    margin-bottom: 70px;
+    width: 30%;
+    }
+
+  .intro img{
+      width: 100%;
+    }
+
+  .col{
+   width: 33%;
+  }
+
+  .projects p {
+    font-size: 1.063em;
+    padding:3px;
+    margin-bottom: 30px;
+  }
+
+  .contact p {
+    font-size: 1.7em;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .phone,
+  .email{
+    font-size:1.2em;
+  }
+  .main-footer {
+    padding: 23px 20px;
+}
+
+  
+
+}
+
+
+
+
+
+  
+
+
