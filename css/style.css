@@ -225,6 +225,14 @@ background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, 
     padding-top: 40px;
   }
 
+  .name a:visited {
+    color: rgb(129, 207, 243);
+  }
+
+  .name a:hover {
+    color:white;
+  }
+
   .main-nav{
     margin: 10px 15px;
   }
