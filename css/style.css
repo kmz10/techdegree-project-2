@@ -72,11 +72,14 @@ hr{
   font-family: 'Kalam', cursive;
 }
 
-.main-nav a:hover{
-  transform:2px;
-  color:white;
+/* visited link */
+.main-nav a:visited {
+  color: rgb(129, 207, 243);
 }
 
+.main-nav a:hover{
+  color:white;
+}
 
 /* END OF NAVIGATION */
 
@@ -169,6 +172,10 @@ background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, 
   color:greenyellow;
 }
 
+.phone{
+  margin-bottom: 1%;
+}
+
 /* footer elemetns and classes */
 
 .main-footer{
@@ -253,8 +260,11 @@ background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, 
     width:50%;
     padding:8px;
     height: 450px;
-     
+    transition: all .6s ease-in-out;  
     }
+
+  .col img:hover { 
+    transform: scale(.8); }
 
   .col p{
     
@@ -322,8 +332,12 @@ background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, 
     margin-right: 20px;
   }
 
+  .main-footer a:visited {
+    color: rgb(129, 207, 243);
+  }
+
   .main-footer a:hover {
-    color:red;
+    color:white;
   }
 
   }
@@ -343,7 +357,7 @@ background: radial-gradient(circle, rgb(243, 213, 213) 0%, rgba(14,14,14,1) 0%, 
 
   .main-nav {
     float:right;
-    padding-top:50px;
+    padding-top:45px;
     font-size: 1em;
     margin-right: 30px;
     
